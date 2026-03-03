@@ -9,7 +9,7 @@ export default async function startCrons(): Promise<void> {
             retryLimit: 3,
             retryDelay: 60,
             expireInSeconds: 600,
-            cron: CRON_MINUTELY,
+            cron: CRON_HOURLY,
             workOptions: { batchSize: 1 },
         }),
     ]);
